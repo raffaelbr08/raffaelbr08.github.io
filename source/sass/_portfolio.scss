@@ -1,0 +1,27 @@
+#portfolio{
+	@include padraoSections(0px,white,white);
+	color:#e74c3c;
+	.portfolio-title{
+		@include titlesSections();
+	}
+	
+	.portfolio{
+		display:flex;
+		flex-direction:column;
+		align-items:center;
+		
+		.img-portfolio{
+			@extend .img-fluid;			
+		}
+	}
+}
+
+@media (min-width:760px){
+	.portfolio{
+		flex-direction:row!important;
+		flex-wrap:wrap;
+		.img-link{
+			width:33.3333%;
+		}
+	}
+}

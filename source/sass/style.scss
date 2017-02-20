@@ -1,0 +1,24 @@
+@import "../componentes/bootstrap/scss/bootstrap.scss";
+@import"mixin";
+
+@import "header";
+@import "about";
+@import "services";
+@import"portfolio";
+@import"contact";
+
+body{
+font-family: 'Amaranth', sans-serif!important;
+margin:0;
+padding:0;
+}
+// TIPOGRAFY
+h2,
+h3,
+h4{
+	font-family: 'Amaranth', sans-serif!important;
+}
+
+p{
+	font-family: 'Titillium Web', sans-serif!important;
+}

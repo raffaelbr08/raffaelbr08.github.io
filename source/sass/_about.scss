@@ -1,0 +1,53 @@
+#about{
+	@include padraoSections(50px,#e74c3c,white);	
+	.about-title{
+			@include titlesSections();
+			color:white;
+		}
+	.about{		
+		display:flex;
+		flex-direction:column;
+		align-items:center;
+		text-align:left;		
+		color:white;		
+		.about-img{		
+			.img-profile{
+				@extend .img-fluid;			
+				max-width:300px;
+				@include box-shadow();							
+				margin-bottom:10px;
+				border-radius:2%;
+			}
+			.social{
+				text-align:center;
+				a{color:white;margin-left:5px;}			
+			}
+		}
+		.about-description{
+			.about-skills{		
+				.title-skills{
+					color:white;
+					margin:20px 0;					
+				}
+				.img-skill{	
+					width:70px;				
+					margin-bottom:20px;	
+					@include box-shadow();			
+				}
+			}
+		}
+	}
+}	
+
+@media (min-width:760px){
+	.about{
+		flex-direction:row!important;
+		justify-content:center;
+		max-width:970px;
+		margin:0 auto;
+
+		.about-description{
+   			margin-left:150px;
+   		}  		
+   	}	
+}
