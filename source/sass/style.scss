@@ -8,7 +8,6 @@
 @import"contact";
 
 body{
-font-family: 'Amaranth', sans-serif!important;
 margin:0;
 padding:0;
 }
@@ -16,9 +15,29 @@ padding:0;
 h2,
 h3,
 h4{
-	font-family: 'Amaranth', sans-serif!important;
+		font-family: 'Nunito', sans-serif;	
+		font-weight: bold;
 }
 
-p{
-	font-family: 'Titillium Web', sans-serif!important;
+a:focus, a:hover {
+    color: #e74c3c;
+    font-weight: bold;
+    font-family: 'Nunito', sans-serif;	
 }
+a{
+	font-family: 'Nunito', sans-serif!important;	
+}
+
+.btn-skill{
+	border:1px solid #d4d4d4;
+	background:white;
+	color:#e74c3c;
+	font-size:1em;
+	font-weight:bold;
+	font-family: "Nunito", sans-serif !important;
+	&:hover{
+		color:white;
+		background:#e74c3c;
+	}
+}
+

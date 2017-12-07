@@ -13,52 +13,56 @@
 	<!-- FONT -->
 	<link rel="stylesheet" href="fonts/styles.css">
 	<link href="https://fonts.googleapis.com/css?family=Amaranth|Titillium+Web" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Nunito:400,400i,800" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 
-	<nav>	
+	<nav class="nav">	
 		<div class="brand">
 			<h1 class="logo-text">< rafaelbr <span>dev/></span></h1>
-			<p class="logo-text-sub">front - end</p>
+		
 		</div>
 		<ul class="nav">			
-			<li><a href="#about">Sobre</a></li>
-			<li><a href="#services">Serviços</a></li>
-			<li><a href="#portfolio">Portfolio</a></li>
-			<li><a href="https://www.polarisoffice.com/d/2RQdI60M">Curriculo</a></li>
-			<li><a href="#contact">Contato</a></li>	
+			<li><a class="scroll" href="#about">Sobre</a></li>
+			<li><a class="scroll" href="#services">Serviços</a></li>
+			<li><a class="scroll" href="#portfolio">Portfolio</a></li>
+			<li><a class="scroll" href="https://www.polarisoffice.com/d/2RQdI60M">Curriculo</a></li>
+			<li><a class="scroll" href="#contact">Contato</a></li>	
 		</ul>	
 	</nav>
 
 	<header>
 
-		<h2 class="title-header">Hi, I'm Rafael Brussolo.</h2>
+		<h2 class="title-header">Hi, I'm Rafael Brussolo.</h2>		
+		<p class="title-header-sub2 wow fadeInDown" data-wow-delay="0s">Front end Developer</p>
 		<p class="title-header-sub"></p>
-		<p class="title-header-sub2 wow fadeInDown" data-wow-delay="5s">ESTÁ NO LUGAR CERTO!</p>
-		<p id="contato"><a href="#contato"><i class="fa fa-envelope-o fa-5x wow fadeInUp" data-wow-delay="6s" aria-hidden="true"></i></a></p>
+		<p id="contato"><a class="scroll" href="#about"><i class="fa fa-angle-double-down fa-3x wow fadeInUp" data-wow-delay="0s" aria-hidden="true"></i></a></p>
 
-	</header>	
+	</header>
 
 	<section id="about">
-
 		<h2 class="about-title">Sobre mim</h2>
 		<div class="about">
 			<div class="about-img">
 				<img src="assets/imgs/profile.JPG" class="img-profile">
 				<p class="social">
-				<a href="http://facebook.com/raffaelbr"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a><a href="#"><i class="fa fa-google-plus-square fa-2x" aria-hidden="true"></i></i></a>
-				<a href="#"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
-				<a href="http://github.com/raffaelbr08"><i class="fa fa-git-square fa-2x" aria-hidden="true"></i></a>
+				<a href="http://facebook.com/raffaelbr"><i class="fa fa-facebook-square fa-3x" aria-hidden="true"></i></a><a href="#"><i class="fa fa-google-plus-square fa-3x" aria-hidden="true"></i></i></a>
+				<a href="#"><i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i></a>
+				<a href="http://github.com/raffaelbr08"><i class="fa fa-git-square fa-3x" aria-hidden="true"></i></a>
 				</p>
 			</div>
 
+
+
 			<div class="about-description">		
-				<p>Atualmente moro em São Paulo/SP, tenho 21 anos. <br>Atuo como desenvolvedor Front-End desde 2014.
+				<p>Atualmente moro em São Paulo/SP, tenho 21 anos. <br> Graduando em Analise e desenvolvimento de sistemas pela FIAP.<br> Atuo como desenvolvedor Front-End desde 2015.
 					Especialista em HTML5 e CSS3, com sólidos conhecimentos em Javascript/jQuery, 
-					SEO e Responsive Design, além de frameworks como Bootstrap, Wordpress e Opencart.
-					Tecnologias como Sass e Gulp são de uso obrigatório em meus projetos e Worflow.
+					SEO e Responsive Design, além de frameworks como Bootstrap, Angular, React.
+					Tecnologias como Sass e Gulp e Git são de uso obrigatório em meus projetos e Worflow.
+					Conhecimentos basicos em arquitetura de software - BackEnd. Java, SQL,Banco de dados, UML.
 					Faça o download do meu currículo no menu acima para outras informações relevantes sobre mim.</p>
+					<button class="btn btn-cv">Download CV</button>
 				<hr>
 				<div class="about-skills">
 					<h4 class="title-skills">Skills</h4>
@@ -103,18 +107,111 @@
 	<section id="portfolio">	
 		<h2 class="portfolio-title">Portfolio</h2>
 		<div class="portfolio">
-			<a href="http://tepli.com.br" class="img-link"><img src="assets/imgs/port1.jpg" alt="" class="img-portfolio"></a>
-			<a href="" class="img-link"><img src="assets/imgs/portfolio-6.jpg" alt="" class="img-portfolio"></a>
-			<a href="" class="img-link"><img src="assets/imgs/port3.jpg" alt="" class="img-portfolio"></a>
-			<a href="" class="img-link"><img src="assets/imgs/port4.jpg" alt="" class="img-portfolio"></a>
-			<a href="" class="img-link"><img src="assets/imgs/port5.jpg" alt="" class="img-portfolio"></a>
-			<a href="" class="img-link"><img src="assets/imgs/port2.jpg" alt="" class="img-portfolio"></a>
-		</div>			
+			<div class="block-item">
+				<div class="img-port">
+					<img src="assets/imgs/port1.jpg" class="img-fluid" alt="">	
+					<div class="hover-img">
+						<a href="http://tepli.com.br" target=“_blank” >
+						<div class="footer">				
+							<i class="fa fa-external-link" aria-hidden="true"></i>
+						</div>
+						</a>
+					</div>				
+				</div>
+				<p>Tepli - plasticos</p>
+				<button class="btn btn-skill">html</button>
+				<button class="btn btn-skill">css</button>
+				<button class="btn btn-skill">javascript</button>
+			</div>
+			<div class="block-item">
+				<div class="img-port">
+					<img src="assets/imgs/port4.jpg" class="img-fluid" alt="">
+					<div class="hover-img">
+						<a href="http://lockerapp.com.br" target="_blak">
+						<div class="footer">				
+							<i class="fa fa-external-link" aria-hidden="true"></i>
+						</div>
+						</a>
+					</div>
+				</div>					
+				<p>LockerApp (Web)</p>
+				<button class="btn btn-skill">html</button>
+				<button class="btn btn-skill">css</button>
+				<button class="btn btn-skill">AngularJs</button>							
+			</div>
+			<div class="block-item">
+				<div class="img-port">
+					<img src="assets/imgs/portfolio-1.jpg" class="img-fluid" alt="">
+					<div class="hover-img">
+						<a href="https://play.google.com/store/apps/details?id=com.ionicframework.locker265031" target=“_blank” >
+						<div class="footer">							
+							<i class="fa fa-external-link" aria-hidden="true"></i>
+						</div>
+						</a>
+					</div>
+				</div>
+					<p>LockerApp (Mobile)</p>
+					<button class="btn btn-skill">html</button>
+					<button class="btn btn-skill">css</button>
+					<button class="btn btn-skill">Ionic</button>
+								
+			</div>	
+		</div>	
+
+		<div class="portfolio">
+			<div class="block-item">
+				<div class="img-port">
+					<img src="assets/imgs/header-bg2.jpg" class="img-fluid" alt="">
+					<div class="hover-img">
+						<div class="footer">							
+							<i class="fa fa-external-link" aria-hidden="true"></i>
+						</div>
+					</div>
+				</div>
+						<p>Osasco - Serviço Desaparecidos</p>
+					<button class="btn btn-skill">html</button>
+					<button class="btn btn-skill">css</button>
+					<button class="btn btn-skill">javascript/jquery</button>
+				
+			</div>
+			<div class="block-item">
+				<div class="img-port">
+					<img src="assets/imgs/portfolio-6.jpg" class="img-fluid" alt="">
+					<div class="hover-img">
+						<div class="footer">							
+							<i class="fa fa-external-link" aria-hidden="true"></i>
+						</div>
+					</div>
+				</div>	
+
+					<p>Rodrigo Guimaraes - Fotografia</p>
+					<button class="btn btn-skill">html</button>
+					<button class="btn btn-skill">css</button>
+					<button class="btn btn-skill">Javascript</button>
+							
+			</div>
+			<div class="block-item">
+				<div class="img-port">
+					<img src="assets/imgs/port3.jpg" class="img-fluid" alt="">
+					<div class="hover-img">
+						<a href="http://raffaelbr.github.io" target="_blank">
+						<div class="footer">							
+							<i class="fa fa-external-link" aria-hidden="true"></i>
+						</div>
+						</a>
+					</div>
+				</div>	
+				<p>HealthTrack (Web/mobile)</p>
+					<button class="btn btn-skill">FrontEnd</button>
+					<button class="btn btn-skill">BackEnd</button>
+					<button class="btn btn-skill">Java</button>			
+			</div>	
+		</div>		
 	</section>
 
 	<section id="contact">
 		<h2 class="contact-title">Contato</h2>
-		<p>Entre em contato conosco.</p>
+		<p>Entre em contato comigo.</p>
 		<div class="contact">
 			<div class="contact-tel">
 				<img src="assets/imgs/fone.png" alt="">
@@ -135,8 +232,19 @@
   new WOW().init();
 
    $('.title-header-sub').typeIt({
-    strings: ['Precisando de um site atual, responsivo e interativo?']
+    strings: ['Desenvolvimento de sites, com HTML semântico, CSS e Javscript. Role o site para saber mais sobre mim.']
   });
+
+   $('.scroll').click(function(e){
+   	e.preventDefault();
+   	var clicado = $(this).attr('href'),
+
+   	 targetOffSet = $(clicado).offset().top;
+   	$('body,html').animate({
+   		scrollTop: targetOffSet -95
+   	},800)
+   	
+   })
 
 </script>
 

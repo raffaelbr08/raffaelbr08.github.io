@@ -2,10 +2,11 @@
 h1.logo-text{	
 	font-weight:700;
 	color: white;
-	text-align:center;	
+	text-align:center;
+	font-family: 'Nunito', sans-serif;	
 	span{
 		color:#e74c3c;
-		font-family: 'Amaranth', sans-serif!important;
+		font-family: 'Nunito', sans-serif;	
 	}
 }
 .logo-text-sub{
@@ -33,9 +34,9 @@ nav {
 			a{
 				display:inline-block;
 				padding:5px 0px;
+				font-family: 'Nunito', sans-serif!important;	
 				text-transform: uppercase;
-				font-size:18px;
-				font-family: 'Amaranth', sans-serif!important;
+				font-size:1em;				
 				color:#d4d4d4;
 				&:hover{
 					color:#e74c3c;
@@ -61,7 +62,10 @@ header {
 		font-size:60px;
 	}
 	.title-header-sub{
-		font-size:23px;
+		    width: 520px;
+		    font-family: 'Nunito', sans-serif;
+		    
+		    font-size: 1.1em;	
 	}
 	.title-header-sub2{
 		font-size:25px;
@@ -99,10 +103,10 @@ header {
 		min-height:740px;
 		padding-top:250px;
 		.title-header-sub2{
-		font-size:28px;
-		font-weight:bold;
-		background-color:red;		
-		width:400px;
+		font-size: 24px;
+	    font-weight: bold;
+	    background-color: #e74c3c;
+	    width: 527px;
 	}
 	}
 }

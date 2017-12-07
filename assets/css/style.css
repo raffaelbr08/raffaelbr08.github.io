@@ -4903,10 +4903,11 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 h1.logo-text {
   font-weight: 700;
   color: white;
-  text-align: center; }
+  text-align: center;
+  font-family: 'Nunito', sans-serif; }
   h1.logo-text span {
     color: #e74c3c;
-    font-family: "Amaranth", sans-serif !important; }
+    font-family: 'Nunito', sans-serif; }
 
 .logo-text-sub {
   text-align: center;
@@ -4932,9 +4933,9 @@ nav {
       nav ul li a {
         display: inline-block;
         padding: 5px 0px;
+        font-family: "Nunito", sans-serif !important;
         text-transform: uppercase;
-        font-size: 18px;
-        font-family: "Amaranth", sans-serif !important;
+        font-size: 1em;
         color: #d4d4d4; }
         nav ul li a:hover {
           color: #e74c3c;
@@ -4954,7 +4955,9 @@ header {
   header .title-header {
     font-size: 60px; }
   header .title-header-sub {
-    font-size: 23px; }
+    width: 520px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.1em; }
   header .title-header-sub2 {
     font-size: 25px;
     font-weight: bold;
@@ -4980,10 +4983,10 @@ header {
     min-height: 740px;
     padding-top: 250px; }
     header .title-header-sub2 {
-      font-size: 28px;
+      font-size: 24px;
       font-weight: bold;
-      background-color: red;
-      width: 400px; } }
+      background-color: #e74c3c;
+      width: 527px; } }
 
 #about {
   padding: 50px;
@@ -5001,7 +5004,7 @@ header {
     text-align: left;
     color: white; }
     #about .about .about-img .img-profile {
-      max-width: 300px;
+      max-width: 335px;
       -webkit-box-shadow: 3px 6px 32px -9px rgba(0, 0, 0, 0.57);
       -moz-box-shadow: 3px 6px 32px -9px rgba(0, 0, 0, 0.57);
       box-shadow: 3px 6px 32px -9px rgba(0, 0, 0, 0.57);
@@ -5021,6 +5024,16 @@ header {
       -webkit-box-shadow: 3px 6px 32px -9px rgba(0, 0, 0, 0.57);
       -moz-box-shadow: 3px 6px 32px -9px rgba(0, 0, 0, 0.57);
       box-shadow: 3px 6px 32px -9px rgba(0, 0, 0, 0.57); }
+    #about .about .about-description .btn-cv {
+      background: transparent;
+      border: 1px solid #d4d4d4;
+      color: white;
+      font-size: 1em;
+      font-weight: bold;
+      font-family: "Nunito", sans-serif !important; }
+      #about .about .about-description .btn-cv:hover {
+        background: white;
+        color: #e74c3c; }
 
 @media (min-width: 760px) {
   .about {
@@ -5029,7 +5042,7 @@ header {
     max-width: 970px;
     margin: 0 auto; }
     .about .about-description {
-      margin-left: 150px; } }
+      margin-left: 120px; } }
 
 #services {
   padding: 50px;
@@ -5066,21 +5079,57 @@ header {
   background-color: white;
   color: white;
   text-align: center;
-  color: #e74c3c; }
+  color: #e74c3c;
+  background: #d4d4d4;
+  padding: 40px; }
   #portfolio .portfolio-title {
     display: inline-block;
     margin-bottom: 40px; }
   #portfolio .portfolio {
     display: flex;
-    flex-direction: column;
-    align-items: center; }
+    flex-direction: column; }
 
 @media (min-width: 760px) {
   .portfolio {
     flex-direction: row !important;
-    flex-wrap: wrap; }
-    .portfolio .img-link {
-      width: 33.3333%; } }
+    flex-wrap: wrap;
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 25px; }
+    .portfolio .block-item {
+      width: 400px;
+      flex: 1;
+      margin-left: 10px;
+      text-align: left; }
+      .portfolio .block-item .hover-img {
+        width: 100%;
+        min-height: 205px;
+        background-color: rgba(255, 255, 255, 0.4);
+        position: absolute;
+        top: 0;
+        opacity: 0; }
+        .portfolio .block-item .hover-img .footer {
+          font-size: 1.5em;
+          color: white;
+          position: absolute;
+          text-align: center;
+          background: #e74c3c;
+          width: 100%;
+          bottom: -17px;
+          background-color: #e74c3c; }
+      .portfolio .block-item p {
+        font-size: 1em;
+        padding: 5px;
+        color: #4c4c4c; }
+      .portfolio .block-item .img-port {
+        max-width: 350px;
+        cursor: pointer;
+        height: 220px;
+        max-height: 220px;
+        position: relative; }
+        .portfolio .block-item .img-port:hover .hover-img {
+          opacity: 1; } }
 
 #contact {
   padding: 50px;
@@ -5114,14 +5163,30 @@ footer {
     padding-top: 20px; } }
 
 body {
-  font-family: "Amaranth", sans-serif !important;
   margin: 0;
   padding: 0; }
 
 h2,
 h3,
 h4 {
-  font-family: "Amaranth", sans-serif !important; }
+  font-family: 'Nunito', sans-serif;
+  font-weight: bold; }
 
-p {
-  font-family: "Titillium Web", sans-serif !important; }
+a:focus, a:hover {
+  color: #e74c3c;
+  font-weight: bold;
+  font-family: 'Nunito', sans-serif; }
+
+a {
+  font-family: "Nunito", sans-serif !important; }
+
+.btn-skill {
+  border: 1px solid #d4d4d4;
+  background: white;
+  color: #e74c3c;
+  font-size: 1em;
+  font-weight: bold;
+  font-family: "Nunito", sans-serif !important; }
+  .btn-skill:hover {
+    color: white;
+    background: #e74c3c; }
