@@ -1,43 +1,36 @@
-@import "../componentes/bootstrap/scss/bootstrap.scss";
-@import"mixin";
+@import "variables";
+@import "mixin";
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  font-family: $font-base;
+  color: $dark-color;
+  line-height: 1.6;
+}
+
+a {
+  color: $primary-color;
+  text-decoration: none;
+  &:hover { text-decoration: underline; }
+}
+
+.btn {
+  border: 1px solid $primary-color;
+  background: none;
+  color: $primary-color;
+  padding: .5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  &:hover {
+    background: $primary-color;
+    color: white;
+  }
+}
 
 @import "header";
 @import "about";
 @import "services";
-@import"portfolio";
-@import"contact";
-
-body{
-margin:0;
-padding:0;
-}
-// TIPOGRAFY
-h2,
-h3,
-h4{
-		font-family: 'Nunito', sans-serif;	
-		font-weight: bold;
-}
-
-a:focus, a:hover {
-    color: #e74c3c;
-    font-weight: bold;
-    font-family: 'Nunito', sans-serif;	
-}
-a{
-	font-family: 'Nunito', sans-serif!important;	
-}
-
-.btn-skill{
-	border:1px solid #d4d4d4;
-	background:white;
-	color:#e74c3c;
-	font-size:1em;
-	font-weight:bold;
-	font-family: "Nunito", sans-serif !important;
-	&:hover{
-		color:white;
-		background:#e74c3c;
-	}
-}
-
+@import "portfolio";
+@import "contact";

@@ -1,67 +1,38 @@
-#about{
-	@include padraoSections(50px,#e74c3c,white);	
-	.about-title{
-			@include titlesSections();
-			color:white;
-		}
-	.about{		
-		display:flex;
-		flex-direction:column;
-		align-items:center;
-		text-align:left;		
-		color:white;		
-		.about-img{		
-			.img-profile{
-				@extend .img-fluid;			
-				max-width:335px;
-				@include box-shadow();							
-				margin-bottom:10px;
-				border-radius:2%;
-			}
-			.social{
-				text-align:center;
-				a{color:white;margin-left:5px;}			
-			}
-		}
-		.about-description{
-			.about-skills{		
-				.title-skills{
-					color:white;
-					margin:20px 0;					
-				}
-				.img-skill{	
-					width:70px;				
-					margin-bottom:20px;	
-					@include box-shadow();			
-				}
-			}	
-						
-			.btn-cv{
-				background:transparent;
-				border:1px solid #d4d4d4;
-				color:white;
-				font-size:1em;
-				font-weight:bold;
-				font-family: "Nunito", sans-serif !important;
-				&:hover{
-					background:white;
-					color:#e74c3c;
-				}
-			}
-		
-		}
-	}
-}	
+#about {
+  @include padraoSections(4rem, $light-color, $dark-color);
+  .about-title { @include titlesSections(); }
+  .about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    .about-img {
+      .img-profile {
+        width: 200px;
+        border-radius: 50%;
+        @include box-shadow();
+      }
+      .social a {
+        color: $dark-color;
+        margin: 0 .25rem;
+      }
+    }
+    .about-description {
+      text-align: left;
+      .about-skills {
+        display: flex;
+        flex-wrap: wrap;
+        gap: .5rem;
+        margin-top: 1rem;
+        .img-skill { width: 40px; }
+      }
+    }
+  }
+}
 
-@media (min-width:760px){
-	.about{
-		flex-direction:row!important;
-		justify-content:center;
-		max-width:970px;
-		margin:0 auto;
-
-		.about-description{
-   			margin-left: 120px;
-   		}  		
-   	}	
+@media (min-width:768px) {
+  .about { flex-direction: row; align-items: flex-start; }
+  .about-description { margin-left: 2rem; }
 }

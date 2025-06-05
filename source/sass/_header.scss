@@ -1,112 +1,36 @@
-// LOGO SITE TEXT
-h1.logo-text{	
-	font-weight:700;
-	color: white;
-	text-align:center;
-	font-family: 'Nunito', sans-serif;	
-	span{
-		color:#e74c3c;
-		font-family: 'Nunito', sans-serif;	
-	}
-}
-.logo-text-sub{
-	text-align:center;
-	color:white;
-}
-// NAV MOBILE
 nav {
-	display:flex;
-	flex-direction:column;
-	align-items:center;
-	min-height:100px;
-	z-index:2;
-	background-color: rgba(0,0,0,.7);
-	ul{
-		display:flex;
-		flex-direction:column;
-		align-items:center;
-		padding:0;
-		width:100%;
-		li{
-			text-align:center;
-			width:100%;
-			display: list-item;
-			a{
-				display:inline-block;
-				padding:5px 0px;
-				font-family: 'Nunito', sans-serif!important;	
-				text-transform: uppercase;
-				font-size:1em;				
-				color:#d4d4d4;
-				&:hover{
-					color:#e74c3c;
-					text-decoration:none;
-				}
-			}
-		}
-	}	
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 1rem;
+  background: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  .brand {
+    margin-right: auto;
+  }
+  a {
+    color: $dark-color;
+    text-decoration: none;
+    font-weight: 600;
+    &:hover { color: $primary-color; }
+  }
 }
-// HEADER 
+
 header {
-	background-image: url('../../assets/imgs/header-bg.jpg');
-	background-repeat:no-repeat;
-	background-size:cover;	
-	background-position:right;	
-	display:flex;
-	flex-direction:column;
-	align-items:center;
-	text-align:center;	
-	color:#fff;
-	padding:10px;
-	.title-header{
-		font-size:60px;
-	}
-	.title-header-sub{
-		    width: 520px;
-		    font-family: 'Nunito', sans-serif;
-		    
-		    font-size: 1.1em;	
-	}
-	.title-header-sub2{
-		font-size:25px;
-		font-weight:bold;
-		background-color:red;		
-		width:200px;
-	}
-	#contato{
-		a{		
-			color:white;
-			&:hover{
-				color:red;
-			}
-		}				
-	}
-
+  background: linear-gradient(rgba(44,62,80,.75), rgba(44,62,80,.75)), url('../../assets/imgs/header-bg.jpg') center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 8rem 1rem 6rem;
+  h2 { margin: 0 0 .5rem; font-size: 2.5rem; }
+  p { margin: .5rem 0; }
 }
 
-@media (min-width:760px){
-	nav {
-		flex-direction:row;
-	   	justify-content:center; 
-	   	position:fixed;
-	   	width:100%;
-		.brand{
-			margin-right:60px;
-		}		
-		ul {
-			width:650px;
-			flex-direction:row;
-		}
-	}
-
-	header{
-		min-height:740px;
-		padding-top:250px;
-		.title-header-sub2{
-		font-size: 24px;
-	    font-weight: bold;
-	    background-color: #e74c3c;
-	    width: 527px;
-	}
-	}
+@media (min-width:768px) {
+  nav { justify-content: flex-end; padding-left: 2rem; }
+  nav .brand { margin-right: auto; }
+  header h2 { font-size: 3rem; }
 }

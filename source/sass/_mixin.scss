@@ -1,19 +1,14 @@
 @mixin box-shadow(){
-	-webkit-box-shadow: 3px 6px 32px -9px rgba(0,0,0,0.57);
-	-moz-box-shadow: 3px 6px 32px -9px rgba(0,0,0,0.57);
-	box-shadow: 3px 6px 32px -9px rgba(0,0,0,0.57);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
-@mixin titlesSections(){	
-	display:inline-block;
-	margin-bottom:40px;
+@mixin titlesSections(){
+  margin-bottom: 2rem;
 }
 
-@mixin padraoSections($size,$color1,$color2){
-	padding:$size;
-	background-color:$color1;
-	color:$color2;
-	text-align:center;
-	
-	
+@mixin padraoSections($size, $bg, $color){
+  padding: $size;
+  background-color: $bg;
+  color: $color;
+  text-align: center;
 }

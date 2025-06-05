@@ -4,15 +4,9 @@
 	<meta charset="UTF-8">
 	<title>Rafael BR ¡ FRONT END</title>
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1">
-	<link rel="stylesheet" href="assets/css/style.css">	
-	<link rel="stylesheet" href="assets/css/animate.css">
-	<script src="assets/js/jquery.js"></script>
-	<script src="assets/js/wow.min.js"></script>
-	<script src="assets/js/typeit.min.js"></script>
+        <link rel="stylesheet" href="assets/css/style.css">
 
 	<!-- FONT -->
-	<link rel="stylesheet" href="fonts/styles.css">
-	<link href="https://fonts.googleapis.com/css?family=Amaranth|Titillium+Web" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Nunito:400,400i,800" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -35,9 +29,9 @@
 	<header>
 
 		<h2 class="title-header">Hi, I'm Rafael Brussolo.</h2>		
-		<p class="title-header-sub2 wow fadeInDown" data-wow-delay="0s">Front end Developer</p>
+		<p class="title-header-sub2">Front end Developer</p>
 		<p class="title-header-sub"></p>
-		<p id="contato"><a class="scroll" href="#about"><i class="fa fa-angle-double-down fa-3x wow fadeInUp" data-wow-delay="0s" aria-hidden="true"></i></a></p>
+		<p id="contato"><a class="scroll" href="#about"><i class="fa fa-angle-double-down fa-3x" aria-hidden="true"></i></a></p>
 
 	</header>
 
@@ -66,12 +60,12 @@
 				<hr>
 				<div class="about-skills">
 					<h4 class="title-skills">Skills</h4>
-					<a href="" class="img-link-skill"><img src="assets/imgs/html.png" class="img-skill wow fadeIn"></a>
-					<a href="" class="img-link-skill"><img src="assets/imgs/js.png" alt="" class="img-skill wow fadeIn"></a>	
-					<a href="" class="img-link-skill"><img src="assets/imgs/css.png" alt="" class="img-skill wow fadeIn"></a>
-					<a href="" class="img-link-skill"><img src="assets/imgs/bootstrap.png" alt="" class="img-skill wow fadeIn"></a>
-					<a href="" class="img-link-skill"><img src="assets/imgs/git.png" alt="" class="img-skill wow fadeIn"></a>
-					<a href="" class="img-link-skill"><img src="assets/imgs/sass.png" alt="" class="img-skill wow fadeIn"></a>
+					<a href="" class="img-link-skill"><img src="assets/imgs/html.png" class="img-skill"></a>
+					<a href="" class="img-link-skill"><img src="assets/imgs/js.png" alt="" class="img-skill"></a>	
+					<a href="" class="img-link-skill"><img src="assets/imgs/css.png" alt="" class="img-skill"></a>
+					<a href="" class="img-link-skill"><img src="assets/imgs/bootstrap.png" alt="" class="img-skill"></a>
+					<a href="" class="img-link-skill"><img src="assets/imgs/git.png" alt="" class="img-skill"></a>
+					<a href="" class="img-link-skill"><img src="assets/imgs/sass.png" alt="" class="img-skill"></a>
 				</div>			
 			</div>
 		</div>
@@ -81,23 +75,23 @@
 		<h2 class="services-title">Serviços</h2>
 		<div class="services">
 			<div class="service service-web">
-				<img src="assets/imgs/1485820567_Html.png" class="img-service wow fadeInDown" data-wow-duration="2s">
+				<img src="assets/imgs/1485820567_Html.png" class="img-service">
 				<h3>Front end</h3>
 				<p>Código legível, desenvolvido com as melhores práticas. <br>	Html, Css, Javascript.</p>
 			</div>
 			<div class="service service-desgn">
-				<img src="assets/imgs/1485820726_Design_Graphic.png" class="img-service wow fadeInDown" data-wow-duration="2s">
+				<img src="assets/imgs/1485820726_Design_Graphic.png" class="img-service">
 				<h3>Design</h3>
 				<p>Projetos com Design atual, interativo, criativo <br>	Fireworks, Photshop.</p>
 			</div>
 			<div class="service service-backend">
-				<img src="assets/imgs/backend.png" class="img-service wow fadeInDown" data-wow-duration="2s">
+				<img src="assets/imgs/backend.png" class="img-service">
 				<h3>SEO</h3>
 				<p>Análise e implementação de otimização para mecanismos de busco (SEO On-page)
 				</p>
 			</div>
 			<div class="service service-markting">
-				<img src="assets/imgs/1485820515_Adaptive_design.png" class="img-service wow fadeInDown" data-wow-duration="2s">
+				<img src="assets/imgs/1485820515_Adaptive_design.png" class="img-service">
 				<h3>Responsivo</h3>
 				<p>Processo criativo, conceitos em interfaces intuitivas, capaz de se adaptar a qualquer dispositivo.</p>
 			</div>
@@ -228,25 +222,6 @@
 		<p>Desenvolvido por: Rafael Brussolo</p>
 	</footer>
 	
-<script>
-  new WOW().init();
-
-   $('.title-header-sub').typeIt({
-    strings: ['Desenvolvimento de sites, com HTML semântico, CSS e Javscript. Role o site para saber mais sobre mim.']
-  });
-
-   $('.scroll').click(function(e){
-   	e.preventDefault();
-   	var clicado = $(this).attr('href'),
-
-   	 targetOffSet = $(clicado).offset().top;
-   	$('body,html').animate({
-   		scrollTop: targetOffSet -95
-   	},800)
-   	
-   })
-
-</script>
 
 </body>
 </html>

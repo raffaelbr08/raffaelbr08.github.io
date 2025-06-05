@@ -1,30 +1,19 @@
-#contact{
-	@include padraoSections(50px,white,#4c4c4c);
-	.contact-title{
-		@include titlesSections();
-	}
-	.contact{
-		display:flex;
-		flex-direction:column;
-		align-items:center;
-		a {
-			color:#4c4c4c;
-		}
-	}
+#contact {
+  @include padraoSections(4rem, white, $dark-color);
+  .contact-title { @include titlesSections(); }
+  .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    a { color: $primary-color; }
+  }
 }
 
-	footer{
-		@include padraoSections(20px,#4c4c4c,white);
-		white:100%;
-	}
+footer {
+  @include padraoSections(1rem, $dark-color, white);
+}
 
-@media (min-width:760px){
-	.contact{
-		flex-direction:row!important;
-		flex-wrap:wrap;
-		justify-content:space-around;
-		width:500px;
-		margin:0 auto;
-		padding-top:20px;
-	}
+@media (min-width:768px) {
+  .contact { flex-direction: row; justify-content: center; }
 }
