@@ -1,5 +1,5 @@
 #contact{
-	@include padraoSections(50px,white,#4c4c4c);
+       @include padraoSections(50px,white,$dark-color);
 	.contact-title{
 		@include titlesSections();
 	}
@@ -8,13 +8,13 @@
 		flex-direction:column;
 		align-items:center;
 		a {
-			color:#4c4c4c;
+                   color:$dark-color;
 		}
 	}
 }
 
 	footer{
-		@include padraoSections(20px,#4c4c4c,white);
+               @include padraoSections(20px,$dark-color,white);
 		white:100%;
 	}
 

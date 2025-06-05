@@ -4,12 +4,12 @@
   "description": "portfolio",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build:css": "sass source/sass:assets/css",
+    "watch:css": "sass --watch source/sass:assets/css"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-sass": "^3.1.0"
+    "sass": "^1.69.0"
   }
 }
