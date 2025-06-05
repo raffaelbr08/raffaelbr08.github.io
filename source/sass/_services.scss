@@ -1,5 +1,5 @@
 #services{
-	@include padraoSections(50px,white,#4c4c4c);
+       @include padraoSections(50px,white,$dark-color);
 	margin-bottom:40px;
 	.services-title{
 		@include titlesSections();
