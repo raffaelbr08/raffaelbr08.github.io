@@ -1,5 +1,5 @@
 #about{
-	@include padraoSections(50px,#e74c3c,white);	
+       @include padraoSections(50px,$primary-color,white);
 	.about-title{
 			@include titlesSections();
 			color:white;
@@ -38,14 +38,14 @@
 						
 			.btn-cv{
 				background:transparent;
-				border:1px solid #d4d4d4;
+                               border:1px solid $light-color;
 				color:white;
 				font-size:1em;
 				font-weight:bold;
 				font-family: "Nunito", sans-serif !important;
 				&:hover{
 					background:white;
-					color:#e74c3c;
+                                       color:$primary-color;
 				}
 			}
 		
